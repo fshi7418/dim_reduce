@@ -1,6 +1,7 @@
 # dim_reduce
 
 Summary
+
 The idea behind this visualisation is using voxels in 3D (blocks in Minecraft) in combination with the Hilbert curve to simulate dimensional reduction described in Liu Cixin's *Death's End*, which is the third book of *the Rememberance of Earth's Past* series. Due to limitations of computing resources, only the 5th iteration of Hilbert curve is used.
 
 
@@ -13,11 +14,13 @@ Technical Notes
 
 
 How to Launch on Windows 10
+
 To launch, launch git bash from root directory, then execute "node server.js". Next type "localhost:3000" into the web browser to see the index of files.
 Of the most interest would be 2d_1d.html, show_3d_2d.html, and 3d_2d.html. A heads up: 3d_2d.html ran very slowly on my machine's Chrome
 
 
 Pages of Interest
+
 2d_1d.html shows the basic mechanics of how the 5th iteration of Hilbert curve can be used to establish a pseudo-continuous mapping from R^2 to R (pseudo-continuous because we are not mapping point-to-point like in the actual math; computers do actually have a smallest unit when it comes to pictures).
 show_3d_2d.html shows how the idea in 2d_1d.html can be used to map R^3 to R^2.
 Finally, 3d_2d.html is the closest to what is described in Death's End: 
