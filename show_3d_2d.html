@@ -171,35 +171,35 @@
 				//createEarth
 
 				var whiteMaterial= new THREE.MeshPhongMaterial({
-					color:0xffffff,//三角面颜色
-					//side:THREE.DoubleSide//两面可见
+					color:0xffffff,
+					//side:THREE.DoubleSide
 				});
 				var yellowMaterial= new THREE.MeshPhongMaterial({
-					color:0xffff00,//三角面颜色
-					//side:THREE.DoubleSide//两面可见
+					color:0xffff00,
+					//side:THREE.DoubleSide
 				});
 
 				var orangeMaterial= new THREE.MeshPhongMaterial({
-					color:0xFFA500,//三角面颜色
-					//side:THREE.DoubleSide//两面可见
+					color:0xFFA500,
+					//side:THREE.DoubleSide
 				});
 
 				var redMaterial= new THREE.MeshPhongMaterial({
-					color:0xF75000,//三角面颜色
-					//side:THREE.DoubleSide//两面可见
+					color:0xF75000,
+					//side:THREE.DoubleSide
 				});
 				var darkRedMaterial= new THREE.MeshPhongMaterial({
-					color:0xCE0000,//三角面颜色
-					//side:THREE.DoubleSide//两面可见
+					color:0xCE0000,
+					//side:THREE.DoubleSide
 				});
 				var crustMaterial= new THREE.MeshPhongMaterial({
-					color:0x333333,//三角面颜色
-					//side:THREE.DoubleSide//两面可见
+					color:0x333333,
+					//side:THREE.DoubleSide
 				});
 
 				var shellMaterial= new THREE.MeshPhongMaterial({
-					color:0x0033ff,//三角面颜色
-					//side:THREE.DoubleSide//两面可见
+					color:0x0033ff,
+					//side:THREE.DoubleSide
 				});
 				function getInnerKenalMaterial(){
 					var r = Math.floor(Math.random()*10)
@@ -271,7 +271,7 @@
 						voxel = new THREE.Mesh( cubeGeo, shellMaterial );
 						add2Scene = false
 					}
-					if(cubeMap[x+":"+y+":"+z]){//地壳已经包含
+					if(cubeMap[x+":"+y+":"+z]){ // earth mantle included
 						continue
 
 					}
@@ -304,8 +304,8 @@
 
 					var color = point['color']
 					var shellMaterial= new THREE.MeshPhongMaterial({
-						color:color,//三角面颜色
-						//side:THREE.DoubleSide//两面可见
+						color:color,
+						//side:THREE.DoubleSide
 					});
 
 					var voxel = new THREE.Mesh( cubeGeo, shellMaterial );
@@ -326,7 +326,7 @@
 
 				 $.get("earth_shell_3it.json", function(result,status){
 				 	if(result == "file not found"){
-				 		alert("加载地壳模型异常！")
+				 		alert("loading earth crust abnormal")
 
 				 	}else{
 					    var points = result//JSON.parse(result)

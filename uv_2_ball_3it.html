@@ -236,8 +236,8 @@
 									(data.data[i + 1]<<(2*4))+
 									data.data[i + 2]
 							var shellMaterial= new THREE.MeshPhongMaterial({
-								color:color,//三角面颜色
-								side:THREE.DoubleSide//两面可见
+								color:color,
+								side:THREE.DoubleSide
 							});
 
 							var voxel = new THREE.Mesh( cubeGeo, shellMaterial );
@@ -254,7 +254,7 @@
 			    }
 			}
 
-			// 经纬度 转 xyz  uv to xyz
+			// longitude and latitude, xyz  uv to xyz
 			function uvToxyz(u, v, r) {
 			    var wd = (u + 90) * Math.PI / 180,
 			        jd = v * Math.PI / 180,

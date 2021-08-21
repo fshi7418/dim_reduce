@@ -259,8 +259,8 @@
 							var cubeGeo = new THREE.BoxBufferGeometry( cubeLen, 0.1, cubeLen );
 
 							var material= new THREE.MeshPhongMaterial({
-								color:color,//三角面颜色
-								side:THREE.DoubleSide//两面可见
+								color:color,
+								side:THREE.DoubleSide
 							});
 							var voxel = new THREE.Mesh( cubeGeo, material );
 							var posX = (-canvas.width/2+j)*cubeLen+cubeLen/2
