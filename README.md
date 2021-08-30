@@ -4,7 +4,7 @@
 
 The idea behind this visualisation is using voxels in 3D (similar idea to blocks in Minecraft) in combination with the Hilbert curve to visualise dimensional reduction described in Liu Cixin's *Death's End*,  the third book of his *Rememberance of Earth's Past* series. Due to limitations of computing resources, only the 5th iteration of Hilbert curve is used.
 
-The code is an exact copy of what is here (https://github.com/KikiLetGo/DimReduce), except that I changed some comments in Chinese to English.
+The code is an exact copy of what is here (https://github.com/KikiLetGo/DimReduce), except that I changed some comments in Chinese to English, but this README file is original from me.
 
 To see the video explanation of the code and to see the code working in action, see here:
 https://www.bilibili.com/video/BV1Sf4y147J9?p=1&share_medium=android_i&share_plat=android&share_source=MESSENGER&share_tag=s_i&timestamp=1622480545&unique_k=2MDkB7
